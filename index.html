@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISES.</title>
+</head>
+<body style="background-color:burlywood;">
+    
+    <script src="index.js"></script>
+    <div>
+    <H1>1.This is an example of Event handling:</H1>
+    <label style="font-size: 20px; padding: 15px;" >Click the button to paste a sentence in the page.</label><br>
+    <button type="button" onclick= "paste()" style="font-size: 15px; margin-left: 0.4cm; margin-top: 5px;">Click</button>
+    <p id="p1" style="margin-left:0.5cm ; font-size: 20px; color: blue;"></p>
+    </div>
+    <div>
+        <H1>2.The Examples below shows the different types of loops in Javascript:</H1>
+        <h2>The numbers are printed in the console.</h2>
+        <ol>
+         <li style="font-size: 0.5cm;">A for loop iterates code for a certain number of times.</li>
+         <button id="B1" type="button" onclick="forloop()">Press</button>
+         <div style="color: blue" id="myForloop"></div>
+         <li style="font-size: 0.5cm;">A while loop iterates code until the a specified condition is true. </li>
+         <button id="B2" type="button" onclick="whileloop()">Press</button> 
+         <div style="color: blue" id="myWhileloop"></div>       
+         <li style="font-size: 0.5cm;">Also iterates code while a specified condition is true but it iterates the code first and then the condition is checked.</li>
+         <button id="B3" type="button" onclick="dowhileloop()">Press</button>
+         <div style="color: blue" id="myDowhileloop"></div>
+        </ol>
+    </div>
+    <div>
+        <h1>3.This program finds the Factorial of the given number:</h1>
+        <label>Enter a number:</label><br>
+        <input id="Num" style="margin-top: 0.2cm;"><br>
+        <button type="button" onclick="factorialize()">Submit</button>
+        <p id="myFactorial"></p>
+    </div>
+    <div>
+        <h1>4.This program finds the greatest among the three inputed numbers:</h1>
+        <label>First number:</label>
+        <input id="a" style="margin-top: 0.2cm; margin-left: 0.42cm;"><br>
+        <label>Second number:</label>
+        <input id="b" style="margin-top: 0.2cm;"><br>
+        <label>Third number:</label>
+        <input id="c" style="margin-top: 0.2cm; margin-left: 0.3cm;"><br>
+        <button type="button" onclick="greatest()">Enter</button>
+        <p id="gNum"></p>
+    </div>
+    <div>
+        <h1>5.A program that finds the area and circumference  of a circle:</h1>
+    <label>Enter the radius of the circle.</label><br>
+    <input id="radius"><br>
+    <button type="button" onclick="calculate()">Enter</button><br>
+    <p style="font-size: 0.5cm;" id="ans"></p>
+</div>
+<div>
+    <h1>6.A program that writes all the even number from 1 to 100:</h1>
+    <div id="myEven"></div>
+    <button type="button" onclick="even()">Press to print the numbers.</button>
+</div>
+<div>
+    <h1>7.This program finds the sum of two numbers using a function:</h1>
+    <form>Number1 :</form><input type="number" id="no1"><br>
+    <form>Number2 :</form><input type="number"  id="no2"><br>
+    <button type="button" onclick="sum()">Press to find sum.</button>
+    <P id="sum"></P>
+</div>
+<div>
+    <h1>8.A program that reverses the number inputed:</h1>
+    <label>Enter a number</label><br>
+    <input id="theNum"><br>
+    <button type="button" onclick="reverses()">reverse</button>
+    <p id="reversednum"></p>
+</div>
+<div>
+    <h1>9.A program to display the fibonacci series:</h1>
+    <label>Enter the number of Elements.</label><br><input id="noE">
+    <button type="button" onclick="series()">Press to display the series.</button>
+    <div id="mySeries" > </div>
+</div>
+<div>
+    <h1>10.This programs checks the form info and validates it.</h1>
+<form method="post" action="myform.php">
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" id="username" minlength="6" required >
+        <br>
+        <label for="address">Address:</label>
+        <br>
+        <input type="text" id="address" required>
+        <br>
+        <label for="emailinput">Email:</label>
+        <br>
+        <input type="email" id="emailinput" placeholder="Sspongebob@email.com" required>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" minlength="8" required>
+        <br>
+        <input type="submit" onclick="validate()">Enter</button>
+</form>
+
+</div>
+   
+</body>
+</html>
